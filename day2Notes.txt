@@ -1,0 +1,34 @@
+Callback function:
+	-- Added to a async function
+	-- Invoked implicitly whenever the async operation is complete
+	-- Usually last parameter of async function
+	-- callback function will have 2 parameters
+	-- first parameter will be error, second param would be data
+	-- Either error will be populated or data will be populated
+	-- Async op executed unsuccessfully -- error will be populated
+	-- Async op executed successfully -- data will be populated
+	-- Will be excuted on the main thread 
+
+Disadv of sync function
+	-- Block the single thread and single thread will not be able to do any other opeartion
+	-- If file size is very huge, block the thread for a longer time
+
+
+1. Read contents from 2 files and write it into 3rd file
+
+read 2 files parallely -- work on the parallely -- not possible with readFile
+Nodejs -- child processes -- create 2 child processes and make them read the file parallely 
+
+
+Streams and events and event emitters
+	-- data -- huge
+	-- Works with events and event emitters
+
+Mongodb:
+-- insertOne()
+-- insertMany()
+-- find()
+-- updateOne()
+-- updateMany()
+-- deleteOne()
+-- deletMany()
