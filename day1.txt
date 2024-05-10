@@ -1,0 +1,114 @@
+Why Nodejs
+	-- Project requirement
+	-- Lightweight and fast
+		-- Non Blocking model
+		-- Single threaded
+			-- Event loop -- I/O operations
+		-- Based on Chrome V8 engine
+		-- Small set of core modules ; Explicitly import them
+		-- Runtime environment
+		-- Streams -- chunks of data 
+	-- Deployment faster
+	-- Cross platform -- 
+	-- Async operations
+	-- javascript running outside the browser
+	-- compile the nodejs code
+		-- list down the syntax errors 
+
+
+
+Block the network
+Good user experience
+Chunks of data -- network capabilities
+Pagination
+
+File size/response -- big ; streams in nodejs 
+
+Developer: Read a chunk, send a chunk as response;  
+
+
+
+fs.readFile("file1.txt",(err,data)=>{
+	if(data)
+	{
+		fs.readFile("file2.txt",(err,data2)=>{
+			if(data2)
+			{
+				....
+			}
+		})
+	}
+})	
+
+
+
+Data -- Polling booth, Distributed ; multiple places on multiple dates 
+Phase -- 
+Nodejs -- Ideal; data intensive , scale -- huge ; 
+
+Examples on nodejs 
+	-- Games servers, streaming app;chat applications
+
+Nodejs is not preferred
+	-- CPU intensive tasks;  AI/ML
+
+
+IPL -- scalability, data, video of match -- streamed -- Nodejs 
+
+
+NUGET -- Package manager in .net
+
+Nodejs
+npm -- node package manager 
+	-- install modules
+		-- npm install express // install the latest version
+		-- npm install express@x.y.z // install the particular version x.y.z
+ 	-- update modules
+		-- npm update module name
+	-- uninstall modules
+
+Semantic versioning: x.y.x
+x-- version number
+y-- major realease
+z-- minor release(bug fixes)
+
+^
+~ 
+"express": "^4.19.2"
+In my system -- exact version number : 4.19.2
+In a linux version : npm install
+ Versions : >=4.19.0   
+Possibility: 4.19.5
+
+
+"express": "~4.19.2"
+Possibilities versions  >=4.x.0
+
+package.json
+	-- configuration file
+	-- dependencies
+		-- dev dependencies and production dependencies
+	-- scripts
+		npm start
+	-- On installing a module, the dependency will get added to package.json
+
+package.lock.json
+	-- Optional file
+	-- read only file
+	-- Exact version of each module and its internal dependencies
+	-- From where to install the module
+	-- 
+node-modules
+	-- local copy of the modules which this project is dependent on
+
+Centralised place -- node_modules ; multiple projects working with the same copy -- Possible but not a best practice
+
+Project 1: Module1,Module2
+Project 2: Module1,Module3
+
+node-Modules: Module1,Module2,Module3
+
+Deploy project1 : 1,2,3
+
+
+
