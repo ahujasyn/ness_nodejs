@@ -1,0 +1,31 @@
+Limitation of http server :
+	--Very less modularity
+	-- Lot of complexity
+	-- Not well maintained
+	-- Query string not very easy
+	-- File -- read the file and then send it; read -- async op -- time consuming ; Unncessary to read the file
+	-- Routing in the same place -- less modular
+	-- Serperation of concerns
+	-- Get the data from the body -- work with events
+	-- Low level
+
+Express
+	-- fast, flexible and minimalist web framework
+	-- Built on nodejs
+	-- Open source	
+	-- Modularity, handle routes, requests and responses -- better
+	-- Lot of middlewares 
+		-- Authentication,logging, error handling
+	-- Flexibility and customisation
+	-- Template engines
+	-- Scalibility
+
+Middleware
+	-- Inbuilt and custom
+	-- Function
+	-- Purpose -- Work on request and response
+		-- Authentication,logging, error handling, transform the request,response
+	-- Many middlewares
+	- Executed one after the other in the order written
+		-- For this makes use of next()
+	-- After the middlewares, the respective route will be executed
