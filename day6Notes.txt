@@ -1,0 +1,26 @@
+Socket
+    -- Duplex connection
+    -- Two way connection between client and server
+    -- Connection is always open between the same client and server over the same socket
+    -- Connection is disconnected -- close the webpage 
+
+Cricbuzz: client is going to give only one request to the server. Server will keep sending the responses at regular interval of time
+Stocks buy/sell; open the web page ; live updates;
+online chat room: join the chat; receive messages from the other participants; send the messages 
+
+Streams:
+Read stream
+Write stream
+Duplex stream:Two way streams; client can read and write in the same stream
+
+Request stream -- One way ; 
+    -- client --> server
+    -- client will write and server will Read
+    -- stream will get closed
+
+Response stream -- One way  
+    -- server-->client
+    -- server will write and client will read 
+
+
+
